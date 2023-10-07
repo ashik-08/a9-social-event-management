@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Weddings",
-    "image": "wedding.jpg",
+    "image": "https://i.ibb.co/sRXkvRR/image.png",
     "price": "$10,000 - $50,000",
     "short_description": "Elegantly plan your dream wedding with our expert services and create cherished memories that last a lifetime.",
     "description": "Our wedding planning services offer a seamless and beautiful experience for couples on their big day. From venue selection to catering and decor, we ensure every detail is perfect for your dream wedding. Let us take care of the logistics so you can focus on the love and joy of your special day."
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Birthday Parties",
-    "image": "birthday.jpg",
+    "image": "https://i.ibb.co/yVYqcpt/image.png",
     "price": "$500 - $5,000",
     "short_description": "Create unforgettable birthday celebrations with our expert planning and make your special day truly memorable.",
     "description": "Let us help you plan an unforgettable birthday party! Whether it's for kids or adults, we'll handle everything from theme selection to entertainment, ensuring a memorable day for you and your guests. Our goal is to bring your vision to life and create a celebration filled with laughter, joy, and cherished moments."
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Anniversaries",
-    "image": "anniversary.jpg",
+    "image": "https://i.ibb.co/NNsGJ2K/image.png",
     "price": "$1,000 - $10,000",
     "short_description": "Celebrate your love story with our expert planning and create cherished memories for your special anniversary.",
     "description": "Commemorate your love and commitment with a beautifully planned anniversary celebration. We'll create a romantic atmosphere and take care of all the details to make your special day as meaningful as your love. Whether it's your first anniversary or a milestone year, we'll ensure it's a day to remember forever."
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Engagement Parties",
-    "image": "engagement.jpg",
+    "image": "https://i.ibb.co/YhSbNLM/image.png",
     "price": "$500 - $3,000",
     "short_description": "Mark the beginning of your journey together with a stylish engagement party planned by our experts.",
     "description": "Your engagement is a milestone worth celebrating. Our engagement party planning services ensure a joyful and stylish event with personalized touches to mark the beginning of your journey together. We'll work closely with you to create an atmosphere of love and excitement that reflects your unique love story."
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "name": "Retirement Parties",
-    "image": "retirement.jpg",
+    "image": "https://i.ibb.co/Y7bc8BH/image.png",
     "price": "$1,000 - $5,000",
     "short_description": "Honoring a well-deserved retirement with a memorable party planned by our experienced team.",
     "description": "Celebrate the retirement of your loved one or colleague with a memorable retirement party. We'll plan a fitting tribute, complete with decorations and activities to mark this significant life transition. Our goal is to make this moment special, filled with gratitude, laughter, and the promise of new adventures in retirement."
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "name": "Baby Shower",
-    "image": "babyshower.jpg",
+    "image": "https://i.ibb.co/mJpg0ps/image.png",
     "price": "$300 - $2,000",
     "short_description": "Welcome the newest addition to your family with a heartwarming baby shower planned by our dedicated team.",
     "description": "Let us help you host a heartwarming baby shower to welcome the newest addition to your family. From cute decorations to fun games, we'll create a joyful and memorable event for all. Our experienced team understands the importance of this celebration, and we'll ensure it's a day filled with love, anticipation, and precious moments for parents-to-be."

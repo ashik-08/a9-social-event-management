@@ -6,6 +6,8 @@ module.exports = withMT({
     extend: {
       colors: {
         special: '#ff5c50',
+        'service-bg': '#F8714726',
+        'des-text': '#6a6a6a',
       }
     },
   },
