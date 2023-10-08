@@ -6,7 +6,7 @@ const ServiceCard = ({ service }) => {
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex drop-shadow-2xl">
         <figure>
           <img
             className="w-screen h-[160px] lg:h-[200px] xl:h-[240px] rounded-l-lg"
