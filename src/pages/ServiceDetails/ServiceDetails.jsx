@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import { useEffect, useState } from "react";
 import DetailsOfService from "./DetailsOfService";
+import Footer from "../../components/Footer/Footer";
 
 const ServiceDetails = () => {
     const [detail, setDetail] = useState([]);
@@ -19,6 +20,7 @@ const ServiceDetails = () => {
         <div>
             <Navbar></Navbar>
             <DetailsOfService detail={detail}></DetailsOfService>
+            <Footer></Footer>
         </div>
     );
 };
