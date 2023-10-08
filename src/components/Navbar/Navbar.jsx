@@ -1,7 +1,40 @@
 import { Link, NavLink } from "react-router-dom";
 import userDefaultPic from "../../assets/user.png";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
+import "animate.css";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        console.log("user logged out");
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Successfully Logged Out",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+        Swal.fire({
+          title: "Something is wrong!\nTry again!",
+          icon: "error",
+          showClass: {
+            popup: "animate__animated animate__fadeInDown",
+          },
+          hideClass: {
+            popup: "animate__animated animate__fadeOutUp",
+          },
+        });
+      });
+  };
+
   const links = (
     <>
       <li>
@@ -70,7 +103,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="normal-case text-xl md:text-3xl font-bold">EventMania</a>
+        <a className="normal-case text-lg md:text-3xl font-bold">EventMania</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal space-x-5 text-sec-text text-sm font-medium">
@@ -78,28 +111,34 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-3">
-        <img className="w-8 md:w-10" src={userDefaultPic} alt="" />
-        {/* {
-            user ?
-            <Link onClick={handleLogOut}
-          className="bg-pri-text text-white text-sm font-medium md:text-lg md:font-semibold px-5 py-1 rounded"
-        >
-          Logout
-        </Link>
-        :
-        <Link
-          to="/login"
-          className="bg-pri-text text-white text-sm font-medium md:text-lg md:font-semibold px-5 py-1 rounded"
-        >
-          Login
-        </Link>
-        } */}
-        <Link
-          to="/login"
-          className="bg-special text-white text-sm font-medium md:text-lg md:font-semibold px-5 py-1 rounded"
-        >
-          Login
-        </Link>
+        {user ? (
+          <img
+            className="w-8 md:w-10 rounded-full"
+            src={user.photoURL}
+            alt="user-pro-pic"
+          />
+        ) : (
+          <img
+            className="w-8 md:w-10"
+            src={userDefaultPic}
+            alt="user-pro-pic"
+          />
+        )}
+        {user ? (
+          <Link
+            onClick={handleLogOut}
+            className="bg-special text-white text-sm font-medium md:text-lg md:font-semibold px-5 py-1 rounded"
+          >
+            Logout
+          </Link>
+        ) : (
+          <Link
+            to="/login"
+            className="bg-special text-white text-sm font-medium md:text-lg md:font-semibold px-5 py-1 rounded"
+          >
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );
