@@ -3,11 +3,11 @@ import Navbar from "../../components/Navbar/Navbar";
 
 const Gallery = () => {
     return (
-        <div>
+        <section>
             <Navbar></Navbar>
             <h2>This is Gallery page</h2>
             <Footer></Footer>
-        </div>
+        </section>
     );
 };
 

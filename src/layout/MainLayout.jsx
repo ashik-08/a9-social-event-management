@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
     return (
-        <div className="container mx-auto p-2">
+        <div className="container mx-auto p-2 overflow-hidden">
             <Outlet></Outlet>
         </div>
     );

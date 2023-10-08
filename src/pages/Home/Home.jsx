@@ -13,7 +13,7 @@ const Home = () => {
   const { user } = useContext(AuthContext);
 
   return (
-    <div>
+    <section>
       <Navbar></Navbar>
       {user && (
         <h2
@@ -31,7 +31,7 @@ const Home = () => {
       <FollowUs></FollowUs>
       <Newsletter></Newsletter>
       <Footer></Footer>
-    </div>
+    </section>
   );
 };
 

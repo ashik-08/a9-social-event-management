@@ -7,7 +7,7 @@ const Profile = () => {
   const { user } = useContext(AuthContext);
 
   return (
-    <div>
+    <section>
       <Navbar></Navbar>
       {user && (
         <div
@@ -36,7 +36,7 @@ const Profile = () => {
         </div>
       )}
       <Footer></Footer>
-    </div>
+    </section>
   );
 };
 

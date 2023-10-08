@@ -3,11 +3,11 @@ import Navbar from "../../components/Navbar/Navbar";
 
 const Dashboard = () => {
     return (
-        <div>
+        <section>
             <Navbar></Navbar>
             <h2>This is Dashboard</h2>
             <Footer></Footer>
-        </div>
+        </section>
     );
 };
 
