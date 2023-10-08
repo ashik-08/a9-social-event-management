@@ -6,7 +6,7 @@ import Slider from "../../components/Slider/Slider";
 const Home = () => {
 
     const ourServices = useLoaderData();
-    console.log(ourServices);
+    // console.log(ourServices);
 
     return (
         <div>

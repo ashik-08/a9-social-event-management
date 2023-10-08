@@ -5,7 +5,15 @@
     "image": "https://i.ibb.co/sRXkvRR/image.png",
     "price": "$10,000 - $50,000",
     "short_description": "Elegantly plan your dream wedding with our expert services and create cherished memories that last a lifetime.",
-    "description": "Our wedding planning services offer a seamless and beautiful experience for couples on their big day. From venue selection to catering and decor, we ensure every detail is perfect for your dream wedding. Let us take care of the logistics so you can focus on the love and joy of your special day."
+    "description": "Our wedding planning services offer a seamless and beautiful experience for couples on their big day. From venue selection to catering and decor, we ensure every detail is perfect for your dream wedding. Let us take care of the logistics so you can focus on the love and joy of your special day.",
+    "service_provides": [
+      "Venue Selection ",
+      "Catering and Menu Planning ",
+      "Decor and Theme Design ",
+      "Photography and Videography ",
+      "Entertainment Coordination ",
+      "Logistics Management "
+    ]
   },
   {
     "id": 2,
@@ -13,7 +21,15 @@
     "image": "https://i.ibb.co/yVYqcpt/image.png",
     "price": "$500 - $5,000",
     "short_description": "Create unforgettable birthday celebrations with our expert planning and make your special day truly memorable.",
-    "description": "Let us help you plan an unforgettable birthday party! Whether it's for kids or adults, we'll handle everything from theme selection to entertainment, ensuring a memorable day for you and your guests. Our goal is to bring your vision to life and create a celebration filled with laughter, joy, and cherished moments."
+    "description": "Let us help you plan an unforgettable birthday party! Whether it's for kids or adults, we'll handle everything from theme selection to entertainment, ensuring a memorable day for you and your guests. Our goal is to bring your vision to life and create a celebration filled with laughter, joy, and cherished moments.",
+    "service_provides": [
+      "Themed Party Planning",
+      "Entertainment and Activities",
+      "Custom Cake Design",
+      "Decorations and Balloons",
+      "Party Favors and Goodie Bags",
+      "Event Coordination"
+    ]
   },
   {
     "id": 3,
@@ -21,7 +37,15 @@
     "image": "https://i.ibb.co/NNsGJ2K/image.png",
     "price": "$1,000 - $10,000",
     "short_description": "Celebrate your love story with our expert planning and create cherished memories for your special anniversary.",
-    "description": "Commemorate your love and commitment with a beautifully planned anniversary celebration. We'll create a romantic atmosphere and take care of all the details to make your special day as meaningful as your love. Whether it's your first anniversary or a milestone year, we'll ensure it's a day to remember forever."
+    "description": "Commemorate your love and commitment with a beautifully planned anniversary celebration. We'll create a romantic atmosphere and take care of all the details to make your special day as meaningful as your love. Whether it's your first anniversary or a milestone year, we'll ensure it's a day to remember forever.",
+    "service_provides": [
+      "Anniversary Theme Ideas",
+      "Venue Selection",
+      "Customized Decorations",
+      "Fine Dining and Catering",
+      "Entertainment Arrangements",
+      "Personalized Souvenirs"
+    ]
   },
   {
     "id": 4,
@@ -29,7 +53,15 @@
     "image": "https://i.ibb.co/YhSbNLM/image.png",
     "price": "$500 - $3,000",
     "short_description": "Mark the beginning of your journey together with a stylish engagement party planned by our experts.",
-    "description": "Your engagement is a milestone worth celebrating. Our engagement party planning services ensure a joyful and stylish event with personalized touches to mark the beginning of your journey together. We'll work closely with you to create an atmosphere of love and excitement that reflects your unique love story."
+    "description": "Your engagement is a milestone worth celebrating. Our engagement party planning services ensure a joyful and stylish event with personalized touches to mark the beginning of your journey together. We'll work closely with you to create an atmosphere of love and excitement that reflects your unique love story.",
+    "service_provides": [
+      "Venue Selection",
+      "Engagement Party Themes",
+      "Invitation Design",
+      "Catering and Drinks",
+      "Entertainment and Games",
+      "Proposal Planning"
+    ]
   },
   {
     "id": 5,
@@ -37,7 +69,15 @@
     "image": "https://i.ibb.co/Y7bc8BH/image.png",
     "price": "$1,000 - $5,000",
     "short_description": "Honoring a well-deserved retirement with a memorable party planned by our experienced team.",
-    "description": "Celebrate the retirement of your loved one or colleague with a memorable retirement party. We'll plan a fitting tribute, complete with decorations and activities to mark this significant life transition. Our goal is to make this moment special, filled with gratitude, laughter, and the promise of new adventures in retirement."
+    "description": "Celebrate the retirement of your loved one or colleague with a memorable retirement party. We'll plan a fitting tribute, complete with decorations and activities to mark this significant life transition. Our goal is to make this moment special, filled with gratitude, laughter, and the promise of new adventures in retirement.",
+    "service_provides": [
+      "Retirement Party Themes",
+      "Venue Selection",
+      "Farewell Speeches",
+      "Entertainment and Activities",
+      "Decorations and Keepsakes",
+      "Coordination Services"
+    ]
   },
   {
     "id": 6,
@@ -45,6 +85,14 @@
     "image": "https://i.ibb.co/mJpg0ps/image.png",
     "price": "$300 - $2,000",
     "short_description": "Welcome the newest addition to your family with a heartwarming baby shower planned by our dedicated team.",
-    "description": "Let us help you host a heartwarming baby shower to welcome the newest addition to your family. From cute decorations to fun games, we'll create a joyful and memorable event for all. Our experienced team understands the importance of this celebration, and we'll ensure it's a day filled with love, anticipation, and precious moments for parents-to-be."
+    "description": "Let us help you host a heartwarming baby shower to welcome the newest addition to your family. From cute decorations to fun games, we'll create a joyful and memorable event for all. Our experienced team understands the importance of this celebration, and we'll ensure it's a day filled with love, anticipation, and precious moments for parents-to-be.",
+    "service_provides": [
+      "Baby Shower Themes",
+      "Games and Activities",
+      "Decorations and Centerpieces",
+      "Custom Cakes and Treats",
+      "Gift Registry Assistance",
+      "Event Planning and Coordination"
+    ]
   }
 ]
