@@ -1,10 +1,14 @@
 import { Carousel } from "@material-tailwind/react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Slider = () => {
   return (
     <Carousel
       transition={{ duration: 1.5 }}
       className="rounded-xl mt-4 md:mt-10"
+      data-aos="zoom-out" data-aos-offset="200" data-aos-easing="ease-in-out-sine" data-aos-duration="1000"
     >
       <img
         src="https://i.ibb.co/wwrQDBm/image.png"

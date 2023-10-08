@@ -1,8 +1,11 @@
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Newsletter = () => {
   return (
-    <div className="mt-52 ">
+    <div className="mt-52" data-aos="fade-down-right" data-aos-offset="200" data-aos-easing="ease-in-out-sine" data-aos-duration="1000">
       <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32 rounded-lg drop-shadow-lg">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -59,7 +62,7 @@ const Newsletter = () => {
                 </div>
                 <dt className="mt-4 font-semibold text-white">No spam</dt>
                 <dd className="mt-2 leading-7 text-gray-400">
-                  All our mail will be official. We don't spam. We respect your privacy and protects it.
+                  All our mail will be official. We do not spam. We respect your privacy and protects it.
                 </dd>
               </div>
             </dl>

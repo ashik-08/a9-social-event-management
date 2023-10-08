@@ -1,11 +1,14 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const ServiceCard = ({ service }) => {
   const { id, name, image, price, short_description } = service;
 
   return (
-    <div>
+    <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-out-sine" data-aos-duration="1000">
       <div className="flex drop-shadow-2xl">
         <figure>
           <img
