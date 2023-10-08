@@ -51,7 +51,19 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/4"
+          to="/gallery"
+          className={({ isActive }) =>
+            isActive
+              ? "text-special text-sm md:text-lg font-bold underline"
+              : "text-sm md:text-lg"
+          }
+        >
+          Gallery
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/about"
           className={({ isActive }) =>
             isActive
               ? "text-special text-sm md:text-lg font-bold underline"
@@ -61,18 +73,34 @@ const Navbar = () => {
           About
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/5"
-          className={({ isActive }) =>
-            isActive
-              ? "text-special text-sm md:text-lg font-bold underline"
-              : "text-sm md:text-lg"
-          }
-        >
-          Career
-        </NavLink>
-      </li>
+      {user && (
+        <>
+          <li>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-special text-sm md:text-lg font-bold underline"
+                  : "text-sm md:text-lg"
+              }
+            >
+              Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/profile"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-special text-sm md:text-lg font-bold underline"
+                  : "text-sm md:text-lg"
+              }
+            >
+              Profile
+            </NavLink>
+          </li>
+        </>
+      )}
     </>
   );
 
@@ -103,14 +131,34 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="normal-case text-lg md:text-3xl font-bold">EventMania</a>
+        <a
+          className="text-special normal-case text-lg md:text-3xl font-bold"
+          data-aos="zoom-in-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-out-sine"
+          data-aos-duration="1000"
+        >
+          EventMania
+        </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div
+        className="navbar-center hidden lg:flex"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-out-sine"
+        data-aos-duration="1000"
+      >
         <ul className="menu menu-horizontal space-x-5 text-sec-text text-sm font-medium">
           {links}
         </ul>
       </div>
-      <div className="navbar-end space-x-3">
+      <div
+        className="navbar-end space-x-3"
+        data-aos="zoom-in-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-out-sine"
+        data-aos-duration="1000"
+      >
         {user ? (
           <img
             className="w-8 md:w-10 rounded-full"

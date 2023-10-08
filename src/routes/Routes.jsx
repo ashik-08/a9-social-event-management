@@ -6,6 +6,10 @@ import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
+import Gallery from "../pages/Gallery/Gallery";
+import About from "../pages/About/About";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Profile from "../pages/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -24,12 +28,28 @@ const router = createBrowserRouter([
         loader: () => fetch('../../public/event-data.json'),
       },
       {
+        path: "/gallery",
+        element: <Gallery></Gallery>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/dashboard",
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+      },
+      {
+        path: "/profile",
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>,
+      },
+      {
         path: "/register",
-        element: <Register></Register>
+        element: <Register></Register>,
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
     ],
   },

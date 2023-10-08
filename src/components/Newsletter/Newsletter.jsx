@@ -1,7 +1,4 @@
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 const Newsletter = () => {
   return (

@@ -7,16 +7,13 @@ import Newsletter from "../../components/Newsletter/Newsletter";
 import Footer from "../../components/Footer/Footer";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
 
 const Home = () => {
   const ourServices = useLoaderData();
   const { user } = useContext(AuthContext);
 
   return (
-    <div className="overflow-hidden">
+    <div>
       <Navbar></Navbar>
       {user && (
         <h2
@@ -24,7 +21,7 @@ const Home = () => {
           data-aos="zoom-in-up"
           data-aos-offset="500"
           data-aos-easing="ease-in-out-sine"
-          data-aos-duration="1000"
+          data-aos-duration="1500"
         >
           Welcome <span className="text-special ">{user.displayName} !</span>
         </h2>

@@ -1,8 +1,5 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 const ServiceCard = ({ service }) => {
   const { id, name, image, price, short_description } = service;
