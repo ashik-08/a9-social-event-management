@@ -1,12 +1,21 @@
 import { Link, NavLink } from "react-router-dom";
 import userDefaultPic from "../../assets/user.png";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import "animate.css";
+import { useEffect } from "react";
+import { themeChange } from "theme-change";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [themeToggle, setThemeToggle] = useState(false);
+
+  useEffect(() => {
+    themeChange(false);
+    // 👆 false parameter is required for react project
+  }, []);
 
   const handleLogOut = () => {
     logOut()
@@ -153,39 +162,62 @@ const Navbar = () => {
         </ul>
       </div>
       <div
-        className="navbar-end space-x-3"
+        className="navbar-end space-x-2 md:space-x-3"
         data-aos="zoom-in-left"
         data-aos-offset="200"
         data-aos-easing="ease-in-out-sine"
         data-aos-duration="1000"
       >
-        {user ? (
+        {user && user?.photoURL ? (
           <img
-            className="w-8 md:w-10 rounded-full"
+            className="text-[10px] w-8 md:w-10 rounded-full"
             src={user.photoURL}
-            alt="user-pro-pic"
+            alt="user-img"
           />
         ) : (
           <img
-            className="w-8 md:w-10"
+            className="text-[10px] w-8 md:w-10 rounded-full"
             src={userDefaultPic}
-            alt="user-pro-pic"
+            alt="user-img"
           />
         )}
         {user ? (
           <Link
             onClick={handleLogOut}
-            className="bg-special text-white text-sm font-medium md:text-lg md:font-semibold px-5 py-1 rounded"
+            className="bg-special text-white text-sm font-medium md:text-lg md:font-semibold px-3 md:px-5 py-1 rounded"
           >
             Logout
           </Link>
         ) : (
           <Link
             to="/login"
-            className="bg-special text-white text-sm font-medium md:text-lg md:font-semibold px-5 py-1 rounded"
+            className="bg-special text-white text-sm font-medium md:text-lg md:font-semibold px-3 md:px-5 py-1 rounded"
           >
             Login
           </Link>
+        )}
+        {themeToggle ? (
+          <button
+          className="bg-special text-white px-1.5 py-1.5 md:px-2.5 md:py-2.5 rounded-full"
+            onClick={() => {
+              setThemeToggle(!themeToggle);
+            }}
+            data-set-theme=""
+            data-act-class="ACTIVECLASS"
+          >
+            <BsSun className=""></BsSun>
+          </button>
+        ) : (
+          <button
+          className="bg-special text-white px-1.5 py-1.5 md:px-2.5 md:py-2.5 rounded-full"
+            onClick={() => {
+              setThemeToggle(!themeToggle);
+            }}
+            data-set-theme="dark"
+            data-act-class="ACTIVECLASS"
+          >
+            <BsMoon className=""></BsMoon>
+          </button>
         )}
       </div>
     </div>

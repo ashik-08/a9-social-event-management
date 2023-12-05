@@ -11,14 +11,19 @@ import "animate.css";
 
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const [showPass, setShowPass] = useState(false);
-  const { createUser } = useContext(AuthContext);
-  //   console.log(authInfo);
+  const { user, createUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  // Check if the user is already authenticated
+  if (user) {
+    return <Navigate to="/"></Navigate>;
+  }
 
   const handleRegister = (e) => {
     const passRegex =
@@ -82,6 +87,7 @@ const Register = () => {
         });
         // reset the input field
         e.target.reset();
+        navigate("/");
       })
       .catch((error) => {
         console.error(error);

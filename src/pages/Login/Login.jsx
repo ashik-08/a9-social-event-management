@@ -2,7 +2,7 @@ import { Card, Input, Button, Typography } from "@material-tailwind/react";
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
@@ -10,8 +10,13 @@ import "animate.css";
 
 const Login = () => {
   const [showPass, setShowPass] = useState(false);
-  const { signInUser, signInWithGoogle } = useContext(AuthContext);
+  const { user, signInUser, signInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
+
+  // Check if the user is already authenticated
+  if (user) {
+    return <Navigate to="/"></Navigate>;
+  }
 
   const handleLogin = (e) => {
     e.preventDefault();
